@@ -2,11 +2,109 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Девайс</title>
   </head>
-  <body>
+  <body class="page">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="link" class="main-header-logo">
+          <img class="main-header-logo__image" src="img/main-header/logo.jpg" alt="Логотип интернет-магазина Девайс">
+        </a>
+          <input type="text" class="search-input" placeholder="Поиск по сайту">
+          <ul class="user-navigation">
+              <li class="login-link">Войти</li>
+          </ul>
+          <ul class="compare-navigation">
+              <li class="compare-navigation__link">Сравнить</li>
+          </ul>
+          <ul class="basket-navigation">
+              <li class="basket-navigation__link">Корзина</li>
+          </ul>
+          <ul class="main-navigation__catalog">
+            <li class="popup"><a href="link">Каталог товаров</a></li>
+            <li><a href="link"></a>Доставка</li>
+            <li><a href="link"></a>Гарантия</li>
+            <li><a href="link"></a>Контакты</li>
+          </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+        <h1 class="main-container__head main-container__head_visually-hidden">Интернет-магазин Девайс</h1>
+        <section class="popular">
+          <h2 class="popular__head popular__head_visually-hidden">Популярные товары</h2>
+          <!--Здесь будет разметка популярных товаров-->
+        </section>
+        <section class="calatog">
+          <h2 class="catalog__head catalog__head_visually-hidden">Каталог товаров</h2>
+          <!--Здесь будет разметка каталога-->
+        </section>
+        <section class="features">
+          <h2 class="features__head features__head_visually-hidden">Наши преимущества</h2>
+        </section>
+        <section class="partners">
+          <h2 class="partners__head partners__head_visually-hidden">Наши партнеры</h2>
+          <!--Здесь будет разметка партнеров-->
+        </section>
+        <section class="about">
+          <h2 class="about__head">О нас</h2>
+          <p class="about-description">
+              Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.<br>
+              Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+          </p>
+          <ul class="about-description__partners">
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <span class="about-details">
+            <a class="about-details__link" href="link">Подробнее о нас</a>
+          </span>
+        </section>
+        <section class="contacts">
+          <h2 class="contacts__head">Контакты</h2>
+          <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <a class="contacts__map_full" href="link">
+          <img class="contacts__map" src="img/contacts/map.jpg" alt="Наше местоположение на карте">
+          </a>
+          <ul class="writeus-window">
+              <li class="writeus-window__link">Напишите нам</li>
+          </ul>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <a href="link" class="main-footer-logo">
+            <img class="main-footer-logo__image" src="img/main-footer/logo.jpg" alt="Логотип интернет-магазина Девайс">
+          </a>
+          <address class="footer-adress">г. Москва, ул. Строителей, 15</address>
+          <ul class="footer__navigation">
+            <li><a href="link">Доставка</a></li>
+            <li><a href="link">Гарантия</a></li>
+            <li><a href="link">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+              <li class="login-link">Войти</li>
+          </ul>
+          <ul class="compare-navigation">
+              <li class="compare-navigation__link">Сравнить</li>
+          </ul>
+          <ul class="basket-navigation">
+              <li class="basket-navigation__link">Корзина</li>
+          </ul>
+          <p class="telephone">Тел.: +7 (495) 495-95-95</p>
+          <ul class="social-links">
+              <li><a class="social-button" href="#">Фейсбук</a></li>
+              <li><a class="social-button" href="#">Инстаграм</a></li>
+              <li><a class="social-button" href="#">Твиттер</a></li>
+            </ul>
+    </footer>
+    <section class="modal modal-login">
+        <h2 class="modal__head_visually-hidden">Напишите нам</h2>
+        <p>Ваше имя:</p>
+        <p>Ваш e-mail:</p>
+        <p>Текст письма:</p>
+        <button class="modal__send">Отправить</button>
+        <!-- Здесь будет форма -->
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+      </section>
   </body>
 </html>
