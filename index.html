@@ -7,94 +7,83 @@
   <body class="page">
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="link" class="main-header-logo">
-          <img class="main-header-logo__image" src="img/main-header/logo.jpg" alt="Логотип интернет-магазина Девайс">
+        <a href="link" class="main-navigation__logo">
+          <img class="main-navigation__image" src="img/main-navigation/logo.jpg" alt="Логотип интернет-магазина Девайс">
         </a>
-          <input type="text" class="search-input" placeholder="Поиск по сайту">
+          <input type="text" class="main-navigation__search-input" placeholder="Поиск по сайту">
           <ul class="user-navigation">
-              <li class="login-link">Войти</li>
+            <li class="user-navigation__item"><a class="user-navigation__link" href="link">Войти</a></li>
+            <li class="user-navigation__item"><a class="user-navigation__link" href="link">Сравнить</a></li>
+            <li class="user-navigation__item"><a class="user-navigation__link" href="link">Корзина</a></li>
           </ul>
-          <ul class="compare-navigation">
-              <li class="compare-navigation__link">Сравнить</li>
-          </ul>
-          <ul class="basket-navigation">
-              <li class="basket-navigation__link">Корзина</li>
-          </ul>
-          <ul class="main-navigation__catalog">
-            <li class="popup"><a href="link">Каталог товаров</a></li>
-            <li><a href="link"></a>Доставка</li>
-            <li><a href="link"></a>Гарантия</li>
-            <li><a href="link"></a>Контакты</li>
+          <ul class="site-navigation">
+            <li class="site-navigation__item"><a class="site-navigation__link" href="link">Каталог товаров</a></li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="link">Доставка</a></li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="link">Гарантия</a></li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="link">Контакты</a></li>
           </ul>
       </nav>
     </header>
-    <main class="main-container">
-        <h1 class="main-container__head main-container__head_visually-hidden">Интернет-магазин Девайс</h1>
-        <section class="popular">
-          <h2 class="popular__head popular__head_visually-hidden">Популярные товары</h2>
+    <main class="main">
+        <h1 class="main__title visually-hidden">Интернет-магазин Девайс</h1>
+        <section class="popular-goods">
+          <h2 class="popular-goods__title visually-hidden">Популярные товары</h2>
           <!--Здесь будет разметка популярных товаров-->
         </section>
-        <section class="calatog">
-          <h2 class="catalog__head catalog__head_visually-hidden">Каталог товаров</h2>
+        <section class="popular-calatog">
+          <h2 class="popular-catalog__title visually-hidden">Каталог товаров</h2>
           <!--Здесь будет разметка каталога-->
         </section>
         <section class="features">
-          <h2 class="features__head features__head_visually-hidden">Наши преимущества</h2>
+          <h2 class="features__title visually-hidden">Наши преимущества</h2>
+          <!--Здесь будет разметка преимуществ-->
         </section>
         <section class="partners">
-          <h2 class="partners__head partners__head_visually-hidden">Наши партнеры</h2>
+          <h2 class="partners__title visually-hidden">Наши партнеры</h2>
           <!--Здесь будет разметка партнеров-->
         </section>
         <section class="about">
-          <h2 class="about__head">О нас</h2>
-          <p class="about-description">
+          <h2 class="about__title">О нас</h2>
+          <p class="about__description">
               Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.<br>
               Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
           </p>
-          <ul class="about-description__partners">
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
+          <ul class="about__partners-list">
+            <li class="about__partners-item">Деловые линии</li>
+            <li class="about__partners-item">Автотрейдинг</li>
+            <li class="about__partners-item">ЖелДорЭкспедиция</li>
           </ul>
-          <span class="about-details">
-            <a class="about-details__link" href="link">Подробнее о нас</a>
-          </span>
+          <a class="about__details-link" href="link">Подробнее о нас</a>
         </section>
         <section class="contacts">
-          <h2 class="contacts__head">Контакты</h2>
-          <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="contacts__map_full" href="link">
-          <img class="contacts__map" src="img/contacts/map.jpg" alt="Наше местоположение на карте">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <a class="contacts__map-link" href="link">
+          <img class="contacts__map-img" src="img/contacts/map.jpg" alt="Наше местоположение на карте">
           </a>
-          <ul class="writeus-window">
-              <li class="writeus-window__link">Напишите нам</li>
-          </ul>
+          <a class="contacts__writeus-link" href="link">Напишите нам</a>
         </section>
     </main>
     <footer class="main-footer">
-        <a href="link" class="main-footer-logo">
-            <img class="main-footer-logo__image" src="img/main-footer/logo.jpg" alt="Логотип интернет-магазина Девайс">
+        <a class="main-footer__logo">
+            <img class="main-footer__logo-image" src="img/main-footer/__logo/logo.jpg" alt="Логотип интернет-магазина Девайс">
           </a>
-          <address class="footer-adress">г. Москва, ул. Строителей, 15</address>
-          <ul class="footer__navigation">
-            <li><a href="link">Доставка</a></li>
-            <li><a href="link">Гарантия</a></li>
-            <li><a href="link">Контакты</a></li>
+          <address class="main-footer__adress">г. Москва, ул. Строителей, 15</address>
+          <ul class="main-footer__site-navigation">
+            <li class="main-footer__site-navigation-item"><a class="main-footer__site-navigation-link" href="link">Доставка</a></li>
+            <li class="main-footer__site-navigation-item"><a class="main-footer__site-navigation-link" href="link">Гарантия</a></li>
+            <li class="main-footer__site-navigation-item"><a class="main-footer__site-navigation-link" href="link">Контакты</a></li>
           </ul>
-          <ul class="user-navigation">
-              <li class="login-link">Войти</li>
-          </ul>
-          <ul class="compare-navigation">
-              <li class="compare-navigation__link">Сравнить</li>
-          </ul>
-          <ul class="basket-navigation">
-              <li class="basket-navigation__link">Корзина</li>
+          <ul class="footer-user-navigation main-footer__user-navigation">
+              <li class="footer-user-navigation__item"><a class="footer-user-navigation__link" href="link">Войти</a></li>
+              <li class="footer-user-navigation__item"><a class="footer-user-navigation__link" href="link">Сравнить</a></li>
+              <li class="footer-user-navigation__item"><a class="footer-user-navigation__link" href="link">Корзина</a></li>
           </ul>
           <p class="telephone">Тел.: +7 (495) 495-95-95</p>
           <ul class="social-links">
-              <li><a class="social-button" href="#">Фейсбук</a></li>
-              <li><a class="social-button" href="#">Инстаграм</a></li>
-              <li><a class="social-button" href="#">Твиттер</a></li>
+              <li class="social-links__item"><a class="social-links__link" href="link">Фейсбук</a></li>
+              <li class="social-links__item"><a class="social-links__link" href="link">Инстаграм</a></li>
+              <li class="social-links__item"><a class="social-links__link" href="link">Твиттер</a></li>
             </ul>
     </footer>
     <section class="modal modal-login">
