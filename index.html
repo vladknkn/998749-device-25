@@ -28,19 +28,154 @@
         <h1 class="main__title visually-hidden">Интернет-магазин Девайс</h1>
         <section class="popular-goods">
           <h2 class="popular-goods__title visually-hidden">Популярные товары</h2>
-          <!--Здесь будет разметка популярных товаров-->
+          <ul class="popular-goods__list">
+            <li class="popular-goods__item">
+              <h3 class="popular-goods__item-title visually-hidden">Профессиональная селфи-палка</h3>
+              <p class="popular-goods__number">01</p>
+              <img class="popular-goods__image" src="img/main/popular-goods__list/stick.png" alt="Селфи-палка">
+              <b class="popular-goods__tagline">Делай селфи, как Бен Стиллер!</b>
+              <p class="popular-goods__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a class="popular-goods__details" href="#">Подробнее</a>
+              <tr class="popular-goods__table-title table-title">
+                <th class="table-title__header">Длина палки</th>
+                <th class="table-title__header">Вес палки</th>
+                <th class="table-title__header">Материал</th>
+              </tr>
+              <tr class="popular-goods__table-data table-data">
+                <td class="table-data item">8, 5 м</td>
+                <td class="table-data item">5 кг</td>
+                <td class="table-data item">Карбон</td>
+              </tr>
+            </li>
+            <li class="popular-goods__item">
+              <h3 class="popular-goods__item-title visually-hidden">Фитнес-трекер</h3>
+              <p class="popular-goods__number">02</p>
+              <img class="popular-goods__image" src="img/main/popular-goods__list/tracker.png" alt="Фитнес-трекер">
+              <b class="popular-goods__tagline">Худеем правильно!</b>
+              <p class="popular-goods__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="popular-goods__details" href="#">Подробнее</a>
+              <tr class="popular-goods__table-title table-title">
+                <th class="table-title__header">Без подзарядки</th>
+              </tr>
+              <tr class="popular-goods__table-data table-data">
+                <td class="table-data item">48 часов</td>
+              </tr>
+            </li>
+            <li class="popular-goods__item">
+              <h3 class="popular-goods__item-title visually-hidden">Квадрокоптер</h3>
+              <p class="popular-goods__number">03</p>
+              <img class="popular-goods__image" src="img/main/popular-goods__list/copter.png" alt="Квадрокоптер">
+              <b class="popular-goods__tagline">Порхает как бабочка, жалит как пчела!</b>
+              <p class="popular-goods__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="popular-goods__details" href="#">Подробнее</a>
+              <tr class="popular-goods__table-title table-title">
+                <th class="table-title__header">Дальность полёта</th>
+                <th class="table-title__header">Радиус поражения</th>
+              </tr>
+              <tr class="popular-goods__table-data table-data">
+                <td class="table-data item">800 м</td>
+                <td class="table-data item">50 м</td>
+              </tr>
+            </li>
+          </ul>
+          <ul class="popular-goods__navigation goods-navigalion">
+              <li class="goods-navigation__button navigation-button">
+                <a class="navigation-button__link" href="#"></a>
+              </li>
+              <li class="goods-navigation__button navigation-button">
+                  <a class="navigation-button__link" href="#"></a>
+              </li>
+              <li class="goods-navigation__button navigation-button">
+                  <a class="navigation-button__link" href="#"></a>
+              </li>
+          </ul>
         </section>
-        <section class="popular-calatog">
-          <h2 class="popular-catalog__title visually-hidden">Каталог товаров</h2>
-          <!--Здесь будет разметка каталога-->
+        <section class="goods-calatog">
+          <h2 class="goods-catalog__title visually-hidden">Каталог товаров</h2>
+          <ul class="goods-catalog__list goods-list">
+            <li class="goods-list__item">
+              <img class="goods-list__icon" src="img/goods-catalog/glass.jpg" alt="Очки виртуальной реальности">
+              <p>Виртуальная реальность</p>
+            </li>
+            <li class="goods-list__item">
+                <img class="goods-list__icon" src="img/goods-catalog/sticks.jpg" alt="Селфи-палка">
+                <p>Моноподы для селфи</p>
+            </li>
+            <li class="goods-list__item">
+                <img class="goods-list__icon" src="img/goods-catalog/camera.jpg" alt="Экшн-камера">
+                <p class="goods-list__description">Экшн-камеры</p>
+            </li>
+            <li class="goods-list__item">
+                <img class="goods-list__icon" src="img/goods-catalog/tracker.jpg" alt="Фитнес-браслет">
+                <p class="goods-list__description">Фитнес-браслеты</p>
+            </li>
+            <li class="goods-list__item">
+                <img class="goods-list__icon" src="img/goods-catalog/clocks.jpg" alt="Умные часы">
+                <p class="goods-list__description">Умные часы</p>
+            </li>
+            <li class="goods-list__item">
+                <img class="goods-list__icon" src="img/goods-catalog/copter.jpg" alt="Квадрокоптер">
+                <p class="goods-list__description">Квадрокоптеры</p>
+            </li>
+          </ul>
         </section>
         <section class="features">
           <h2 class="features__title visually-hidden">Наши преимущества</h2>
-          <!--Здесь будет разметка преимуществ-->
+          <ul class="features__navigation features-navigalion">
+              <li class="features-navigation__button">
+                <a class="features-navigation__link" href="#">Доставка</a>
+              </li>
+              <li class="features-navigation__button">
+                  <a class="features-navigation__link" href="#">Гарантия</a>
+              </li>
+              <li class="features-navigation__button">
+                  <a class="features-navigation__link" href="#">Кредит</a>
+              </li>
+          </ul>
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__title">Доставка</h3>
+              <p class="features__description">
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+              </p>
+              <img class="features__image" src="img/features/deliver.jpg" alt="Доставщик">
+            </li>
+            <li class="features__item">
+                <h3 class="features__title">Гарантия</h3>
+                <p class="features__description">
+                    Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                </p>
+                <img class="features__image" src="img/features/warranty.jpg" alt="Инструменты">
+            </li>
+            <li class="features__item">
+                <h3 class="features__title">Кредит</h3>
+                <p class="features__description">
+                    Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+                </p>
+                <img class="features__image" src="img/features/credit.jpg" alt="Кредитная карта">
+            </li>
+          </ul>
         </section>
         <section class="partners">
           <h2 class="partners__title visually-hidden">Наши партнеры</h2>
-          <!--Здесь будет разметка партнеров-->
+          <ul class="partners__list">
+            <li class="partners__item">
+              <h3 class="partners__title visually-hidden">DJI</h3>
+              <img class="partners__logo" src="img/partners/dji.png" alt="DJI">
+            </li>
+            <li class="partners__item">
+                <h3 class="partners__title visually-hidden">SP Gadgets</h3>
+                <img class="partners__logo" src="img/partners/sp-gadgets.png" alt="SP Gadgets">
+            </li>
+            <li class="partners__item">
+                <h3 class="partners__title visually-hidden">GoPro</h3>
+                <img class="partners__logo" src="img/partners/gopro.png" alt="GoPro">
+            </li>
+            <li class="partners__item">
+                <h3 class="partners__title visually-hidden">VIVE</h3>
+                <img class="partners__logo" src="img/partners/vive.png" alt="VIVE">
+            </li>
+          </ul>
         </section>
         <section class="about">
           <h2 class="about__title">О нас</h2>

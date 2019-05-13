@@ -33,63 +33,94 @@
           <li class="breadcrumbs__item"><a class="breadcrumbs__link main-breadcrumbs__current">Моноподы для селфи</a></li>
         </ul>
         <section class="filters">
-          <h2 class="filters__title visually-hidden">Фильтры</h2>
-          <!--Здесь будет шапка фильтров-->
-          <!--Здесь будет ползунок-->
-          <ul class="filters__colors-list colors-list">
-            <li class="colors-list__item">Черный</li>
-            <li class="colors-list__item">Белый</li>
-            <li class="colors-list__item">Синий</li>
-            <li class="colors-list__item">Красный</li>
-            <li class="colors-list__item">Розовый</li>
-          </ul>
-          <ul class="filters__bluetooth-list bluetooth-list">
-            <li class="bluetooth-list__item">Есть</li>
-            <li class="bluetooth-list__item">Нет</li>
-          </ul>
-          <a class="filters__show-link" href="#">Показать</a>
+          <h2 class="filters__title">Фильтр:</h2>
+          <div class="filters__block filters-block">
+          <div class="filters-block__ranger ranger">
+            <h3 class="filters-block__title">Стоимость</h3>
+            <!--Здесь будет ползунок-->
+          </div>
+          <div class="filters-block__colors colors">
+            <h3 class="filters-block__title">Цвет</h3>
+              <ul class="colors__list">
+                  <li class="colors__item">Черный</li>
+                  <li class="colors__item">Белый</li>
+                  <li class="colors__item">Синий</li>
+                  <li class="colors__item">Красный</li>
+                  <li class="colors__item">Розовый</li>
+                </ul>
+          </div>
+          <div class="filters-block__bluetooth bluetooth">
+            <h3 class="filters-block__title">Bluetooth</h3>
+              <ul class="bluetooth__list">
+                  <li class="bluetooth__item">Есть</li>
+                  <li class="bluetooth__item">Нет</li>
+              </ul>
+          </div>
+          <a class="filters-block__display-link" href="#">Показать</a>
+        </div>
         </section>
         <section class="catalog">
+          <div class="catalog__sorting sorting">
+            <h2 class="sorting__title">Сортировка:</h2>
+            <ul class="sorting__list">
+              <li class="sorting__item checked">По цене</li>
+              <li class="sorting__item">По типу</li>
+              <li class="sorting__item">По популярности</li>
+            </ul>
+            <!--Здесь будут стрелочки-->
+          </div>
           <h2 class="catalog__title visually-hidden">Каталог моноподов</h2>
           <ul class="catalog__list">
             <li class="catalog__item">
-              <a class="catalog__link" href="#">
                 <img class="catalog__img" src="img/catalog/__item/amateur-stick.jpg" alt="Любительская селфи-палка">
-              </a>
               <h3 class="catalog__title">
                 <a class="catalog__link" href="#">Любительская селфи-палка</a>
               </h3>
               <p class="catalog__price">500 руб.</p>
             </li>
             <li class="catalog__item">
-                <a class="catalog__link" href="#">
                   <img class="catalog__img" src="img/catalog/__item/professional-stick.jpg" alt="Профессиональная селфи-палка">
-                </a>
                 <h3 class="catalog__title">
                   <a class="catalog__link" href="#">Профессиональная селфи-палка</a>
                 </h3>
                 <p class="catalog__price">1 500 руб.</p>
               </li>
               <li class="catalog__item">
-                  <a class="catalog__link" href="#">
                     <img class="catalog__img" src="img/catalog/__item/unsink-stick.jpg" alt="Непотопляемая селфи-палка">
-                  </a>
                   <h3 class="catalog__title">
                     <a class="catalog__link" href="#">Непотопляемая селфи-палка</a>
                   </h3>
                   <p class="catalog__price">2 500 руб.</p>
                 </li>
                 <li class="catalog__item">
-                    <a class="catalog__link" href="#">
                       <img class="catalog__img" src="img/catalog/__item/followme-stick.jpg" alt="Селфи-палка «Следуй за мной»">
-                    </a>
                     <h3 class="catalog__title">
                       <a class="catalog__link" href="#">Селфи-палка «Следуй за мной»</a>
                     </h3>
                     <p class="catalog__price">4 900 руб.</p>
                   </li>
           </ul>
-          <!--Здесь будет навигация по каталогу-->
+          <div class="catalog__navigation navigation">
+            <ul class="navigation__flipping-list flipping__list">
+              <li class="flipping__item">
+                <a class="flipping__link" href="#">Назад</a>
+              </li>
+              <li class="flipping__item">
+               <a class="flipping-link" href="#">Вперед</a>
+              </li>
+            </ul>
+            <ul class="navigation__pages-list pages__list">
+              <li class="pages__item">
+                <a class="pages__link" href="#">1</a>
+              </li>
+              <li class="pages__item">
+                <a class="pages__link" href="#">2</a>
+              </li>
+              <li class="pages__item">
+                <a class="pages__link" href="#">3</a>
+              </li>
+            </ul>
+          </div>
         </section>
       </main>
         <footer class="main-footer">
