@@ -33,41 +33,38 @@
           <li class="breadcrumbs__item"><a class="breadcrumbs__link main-breadcrumbs__current">Моноподы для селфи</a></li>
         </ul>
         <section class="filters">
-          <h2 class="filters__title">Фильтр:</h2>
-          <div class="filters__block filters-block">
-          <div class="filters-block__ranger ranger">
-            <h3 class="filters-block__title">Стоимость</h3>
-            <!--Здесь будет ползунок-->
-          </div>
-          <div class="filters-block__colors colors">
-            <h3 class="filters-block__title">Цвет</h3>
-              <ul class="colors__list">
-                  <li class="colors__item">Черный</li>
-                  <li class="colors__item">Белый</li>
-                  <li class="colors__item">Синий</li>
-                  <li class="colors__item">Красный</li>
-                  <li class="colors__item">Розовый</li>
-                </ul>
-          </div>
-          <div class="filters-block__bluetooth bluetooth">
-            <h3 class="filters-block__title">Bluetooth</h3>
-              <ul class="bluetooth__list">
-                  <li class="bluetooth__item">Есть</li>
-                  <li class="bluetooth__item">Нет</li>
-              </ul>
-          </div>
-          <a class="filters-block__display-link" href="#">Показать</a>
-        </div>
+          <form class="filters__form form" action="#">
+              <h2 class="filters__title">Фильтр:</h2>
+                <h3 class="form__title">Стоимость</h3>
+                <input class="form__range" type="range" min="0" max="10000" step="1" value="5000">
+                <h3 class="form__title">Цвет</h3>
+                  <ul class="colors__list">
+                      <li class="colors__item"><input class="colors__input" type="checkbox" name="answer">Черный</li>
+                      <li class="colors__item"><input class="colors__input" type="checkbox" name="answer">Белый</li>
+                      <li class="colors__item"><input class="colors__input" type="checkbox" name="answer">Синий</li>
+                      <li class="colors__item"><input class="colors__input" type="checkbox" name="answer">Красный</li>
+                      <li class="colors__item"><input class="colors__input" type="checkbox" name="answer">Розовый</li>
+                    </ul>
+                <h3 class="form__title">Bluetooth</h3>
+                  <ul class="bluetooth__list">
+                      <li class="bluetooth__item"><input class="bluetooth__input" type="radio" name="answer">Есть</li>
+                      <li class="bluetooth__item"><input class="bluetooth__input" type="radio" name="answer">Нет</li>
+                  </ul>
+              <button class="form__submit device-submit" type="submit">Показать</button>
+          </form>
         </section>
         <section class="catalog">
           <div class="catalog__sorting sorting">
             <h2 class="sorting__title">Сортировка:</h2>
             <ul class="sorting__list">
-              <li class="sorting__item checked">По цене</li>
-              <li class="sorting__item">По типу</li>
-              <li class="sorting__item">По популярности</li>
+              <li class="sorting__item checked"><a class="sorting__link" href="#">По цене</a></li>
+              <li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
+              <li class="sorting__item"><a class="sorting__link" href="#">По популярности</a></li>
             </ul>
-            <!--Здесь будут стрелочки-->
+            <ul class="sorting__pointer pointer">
+              <li class="pointer__item"><a class="pointer__link" href="#">Сортировка по убыванию</a></li>
+              <li class="pointer__item"><a class="pointer__link" href="#">Сортировка по возрастанию</a></li>
+            </ul>
           </div>
           <h2 class="catalog__title visually-hidden">Каталог моноподов</h2>
           <ul class="catalog__list">
@@ -100,27 +97,23 @@
                     <p class="catalog__price">4 900 руб.</p>
                   </li>
           </ul>
-          <div class="catalog__navigation navigation">
-            <ul class="navigation__flipping-list flipping__list">
-              <li class="flipping__item">
-                <a class="flipping__link" href="#">Назад</a>
+            <ul class="pagination">
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">Назад</a>
               </li>
-              <li class="flipping__item">
-               <a class="flipping-link" href="#">Вперед</a>
+              <li class="pagination__item">
+                  <a class="pagination__link" href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">3</a>
               </li>
-            </ul>
-            <ul class="navigation__pages-list pages__list">
-              <li class="pages__item">
-                <a class="pages__link" href="#">1</a>
-              </li>
-              <li class="pages__item">
-                <a class="pages__link" href="#">2</a>
-              </li>
-              <li class="pages__item">
-                <a class="pages__link" href="#">3</a>
+              <li class="pagination__item">
+                  <a class="pagination-link" href="#">Вперед</a>
               </li>
             </ul>
-          </div>
         </section>
       </main>
         <footer class="main-footer">
