@@ -33,11 +33,11 @@
           <li class="breadcrumbs__item"><a class="breadcrumbs__link main-breadcrumbs__current">Моноподы для селфи</a></li>
         </ul>
         <section class="filters">
-          <form class="filters__form form" action="#">
+          <form class="filters__form filters-form" action="#">
               <h2 class="filters__title">Фильтр:</h2>
-                <h3 class="form__title">Стоимость</h3>
-                <input class="form__range" type="range" min="0" max="10000" step="1" value="5000">
-                <h3 class="form__title">Цвет</h3>
+                <h3 class="filters-form__title">Стоимость</h3>
+                <input class="filters-form__range" type="range" min="0" max="10000" step="1" value="5000">
+                <h3 class="filters-form__title">Цвет</h3>
                   <ul class="colors__list">
                       <li class="colors__item"><input class="colors__input" type="checkbox" name="answer">Черный</li>
                       <li class="colors__item"><input class="colors__input" type="checkbox" name="answer">Белый</li>
@@ -45,21 +45,27 @@
                       <li class="colors__item"><input class="colors__input" type="checkbox" name="answer">Красный</li>
                       <li class="colors__item"><input class="colors__input" type="checkbox" name="answer">Розовый</li>
                     </ul>
-                <h3 class="form__title">Bluetooth</h3>
+                <h3 class="filters-form__title">Bluetooth</h3>
                   <ul class="bluetooth__list">
                       <li class="bluetooth__item"><input class="bluetooth__input" type="radio" name="answer">Есть</li>
                       <li class="bluetooth__item"><input class="bluetooth__input" type="radio" name="answer">Нет</li>
                   </ul>
-              <button class="form__submit device-submit" type="submit">Показать</button>
+              <button class="filters-form__button base-button" type="submit">Показать</button>
           </form>
         </section>
         <section class="catalog">
           <div class="catalog__sorting sorting">
             <h2 class="sorting__title">Сортировка:</h2>
             <ul class="sorting__list">
-              <li class="sorting__item checked"><a class="sorting__link" href="#">По цене</a></li>
-              <li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
-              <li class="sorting__item"><a class="sorting__link" href="#">По популярности</a></li>
+              <li class="sorting__item checked">
+                <a class="sorting__link" href="#">По цене</a>
+              </li>
+              <li class="sorting__item">
+                <a class="sorting__link" href="#">По типу</a>
+              </li>
+              <li class="sorting__item">
+                <a class="sorting__link" href="#">По популярности</a>
+              </li>
             </ul>
             <ul class="sorting__pointer pointer">
               <li class="pointer__item"><a class="pointer__link" href="#">Сортировка по убыванию</a></li>
