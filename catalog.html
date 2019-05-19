@@ -35,8 +35,10 @@
         <section class="filters">
           <form class="filters__form filters-form" action="#" method="GET">
               <h2 class="filters__title">Фильтр:</h2>
-                <h3 class="filters-form__title">Стоимость</h3>
-                <!--Здесь будет ползунок-->
+                <fieldset class="filters__fieldset filters-fieldset">
+                  <legend class="filter-fieldset__legend">Стоимость</legend>
+                  <!--Здесь будет ползунок-->
+                </fieldset>
                 <fieldset class="filters__fieldset filters-fieldset">
                   <legend class="filters-fieldset__legend">Цвет</legend>
                   <ul class="filters-fieldset__list colors-list">
@@ -96,19 +98,36 @@
           <div class="catalog__sorting sorting">
             <h2 class="sorting__title">Сортировка:</h2>
             <ul class="sorting__list">
-              <li class="sorting__item checked">
-                <a class="sorting__link" href="#">По цене</a>
+              <li class="sorting__item">
+                <label class="sorting__label">
+                    <input class="sorting__input" type="radio" name="catalog-sorting" checked>
+                    По цене
+                </label>
               </li>
               <li class="sorting__item">
-                <a class="sorting__link" href="#">По типу</a>
+                  <label class="sorting__label">
+                      <input class="sorting__input" type="radio" name="catalog-sorting">
+                      По типу
+                  </label>
               </li>
               <li class="sorting__item">
-                <a class="sorting__link" href="#">По популярности</a>
+                  <label class="sorting__label">
+                      <input class="sorting__input" type="radio" name="catalog-sorting">
+                      По популярности
+                  </label>
               </li>
             </ul>
             <ul class="sorting__pointer pointer">
-              <li class="pointer__item"><a class="pointer__link" href="#">Сортировка по убыванию</a></li>
-              <li class="pointer__item"><a class="pointer__link" href="#">Сортировка по возрастанию</a></li>
+              <li class="pointer__item">
+                <button type="pointer__button">
+                  <p class="pointer__description visually-hidden">Сортировка по убыванию</p>
+                </button>
+              </li>
+              <li class="pointer__item">
+                  <button type="pointer__button">
+                    <p class="pointer__description visually-hidden">Сортировка по возрастанию</p>
+                  </button>
+              </li>
             </ul>
           </div>
           <h2 class="catalog__title visually-hidden">Каталог моноподов</h2>
