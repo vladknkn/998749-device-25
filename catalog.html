@@ -12,16 +12,53 @@
             </a>
               <input type="text" class="main-navigation__search-input" placeholder="Поиск по сайту">
               <ul class="user-navigation">
-                <li class="user-navigation__item"><a class="user-navigation__link" href="#">Валентин Петухов</a></li>
-                <li class="user-navigation__item"><a class="user-navigation__link" href="#">Выйти</a></li>
-                <li class="user-navigation__item"><a class="user-navigation__link" href="#">Сравнить</a></li>
-                <li class="user-navigation__item"><a class="user-navigation__link" href="#">Корзина</a></li>
+                <li class="user-navigation__item">
+                  <a class="user-navigation__link" href="#">Валентин Петухов</a>
+                </li>
+                <li class="user-navigation__item">
+                  <a class="user-navigation__link" href="#">Выйти</a>
+                </li>
+                <li class="user-navigation__item">
+                  <a class="user-navigation__link" href="#">Сравнить</a>
+                </li>
+                <li class="user-navigation__item">
+                  <a class="user-navigation__link" href="#">Корзина</a>
+                </li>
               </ul>
               <ul class="site-navigation">
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">Каталог товаров</a></li>
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка</a></li>
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">Гарантия</a></li>
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
+                <li class="site-navigation__item">
+                  <a class="site-navigation__link" href="#">Каталог товаров</a>
+                  <button class="site-navigation__button" type="button">Развернуть каталог</button>
+                </li>
+                <li class="site-navigation__item">
+                  <a class="site-navigation__link" href="#">Доставка</a>
+                </li>
+                <li class="site-navigation__item">
+                  <a class="site-navigation__link" href="#">Гарантия</a>
+                </li>
+                <li class="site-navigation__item">
+                  <a class="site-navigation__link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <ul class="catalogue-navigation">
+                  <li class="catalogue-navigation__item">
+                    <a class="catalogue-navigation__link" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="catalogue-navigation__item">
+                    <a class="catalogue-navigation__link" href="catalog.html">Моноподы для селфи</a>
+                  </li>
+                  <li class="catalogue-navigation__item">
+                    <a class="catalogue-navigation__link" href="#">Экшн-камеры</a>
+                  </li>
+                  <li class="catalogue-navigation__item">
+                    <a class="catalogue-navigation__link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="catalogue-navigation__item">
+                    <a class="catalogue-navigation__link" href="#">Умные часы</a>
+                  </li>
+                  <li class="catalogue-navigation__item">
+                    <a class="catalogue-navigation__link" href="#">Квадрокоптеры</a>
+                  </li>
               </ul>
           </nav>
         </header>
@@ -99,34 +136,21 @@
             <h2 class="sorting__title">Сортировка:</h2>
             <ul class="sorting__list">
               <li class="sorting__item">
-                <label class="sorting__label">
-                    <input class="sorting__input" type="radio" name="catalog-sorting" checked>
-                    По цене
-                </label>
+                <a class="sorting__button checked" href="#">По цене</a>
               </li>
               <li class="sorting__item">
-                  <label class="sorting__label">
-                      <input class="sorting__input" type="radio" name="catalog-sorting">
-                      По типу
-                  </label>
+                  <a class="sorting__button" href="#">По типу</a>
               </li>
               <li class="sorting__item">
-                  <label class="sorting__label">
-                      <input class="sorting__input" type="radio" name="catalog-sorting">
-                      По популярности
-                  </label>
+                  <a class="sorting__button" href="#">По популярности</a>
               </li>
             </ul>
             <ul class="sorting__pointer pointer">
               <li class="pointer__item">
-                <button type="pointer__button">
-                  <p class="pointer__description visually-hidden">Сортировка по убыванию</p>
-                </button>
+                <a class="pointer__button_decrease" href="#">Сортировка по убыванию</a>
               </li>
               <li class="pointer__item">
-                  <button type="pointer__button">
-                    <p class="pointer__description visually-hidden">Сортировка по возрастанию</p>
-                  </button>
+                  <a class="pointer__button_increase" href="#">Сортировка по возрастанию</a>
               </li>
             </ul>
           </div>
@@ -138,6 +162,10 @@
                 <a class="catalog__link" href="#">Любительская селфи-палка</a>
               </h3>
               <p class="catalog__price">500 руб.</p>
+              <div class="catalog__hover catalog-hover">
+                  <button class="catalog-hover__button base-button" type="button">В корзину</button>
+                  <button class="catalog-hover__button">Добавить к сравнению</button>
+              </div>
             </li>
             <li class="catalog__item">
                   <img class="catalog__img" src="img/content/professional-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
@@ -145,6 +173,10 @@
                   <a class="catalog__link" href="#">Профессиональная селфи-палка</a>
                 </h3>
                 <p class="catalog__price">1 500 руб.</p>
+                <div class="catalog__hover catalog-hover">
+                    <button class="catalog-hover__button base-button" type="button">В корзину</button>
+                    <button class="catalog-hover__button">Добавить к сравнению</button>
+                </div>
               </li>
               <li class="catalog__item">
                     <img class="catalog__img" src="img/content/unsink-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
@@ -152,6 +184,10 @@
                     <a class="catalog__link" href="#">Непотопляемая селфи-палка</a>
                   </h3>
                   <p class="catalog__price">2 500 руб.</p>
+                  <div class="catalog__hover catalog-hover">
+                      <button class="catalog-hover__button base-button" type="button">В корзину</button>
+                      <button class="catalog-hover__button">Добавить к сравнению</button>
+                  </div>
                 </li>
                 <li class="catalog__item">
                       <img class="catalog__img" src="img/content/followme-stick.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
@@ -159,6 +195,10 @@
                       <a class="catalog__link" href="#">Селфи-палка «Следуй за мной»</a>
                     </h3>
                     <p class="catalog__price">4 900 руб.</p>
+                    <div class="catalog__hover catalog-hover">
+                        <button class="catalog-hover__button base-button" type="button">В корзину</button>
+                        <button class="catalog-hover__button">Добавить к сравнению</button>
+                    </div>
                   </li>
           </ul>
             <ul class="pagination">
