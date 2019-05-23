@@ -212,11 +212,11 @@ a {
   opacity: 0.3;
 }
 
-.footer-user-navigation:hover {
+.footer-user-navigation a:hover {
   opacity: 1;
 }
 
-.footer-user-navigation:focus {
+.footer-user-navigation a:focus {
   opacity: 0.3;
 }
 
@@ -270,4 +270,75 @@ a {
   line-height: 40px;
   letter-spacing: 0.1px;
   list-style: none;
+}
+
+.user-navigation__link-exit {
+  opacity: 0.3;
+}
+
+.base-button {
+  width: 220px;
+  height: 8px;
+  background-color: #f0c52e;
+  color: #000000;
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: center;
+  border: none;
+}
+
+.base-button:hover {
+  width: 220px;
+  height: 40px;
+}
+
+.base-button a:focus {
+  opacity: 0.3;
+}
+
+input:checked:hover {
+  opacity: 0.6;
+}
+
+input:hover {
+  opacity: 0.6;
+}
+
+input:focus {
+  opacity: 1;
+}
+
+input:checked:focus {
+  opacity: 1;
+}
+
+input:disabled,
+input:disabled:checked {
+  opacity: 0.25;
+}
+
+.catalog-title {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+}
+
+.catalog-price {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  text-align: right;
 }
