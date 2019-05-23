@@ -304,7 +304,7 @@ a {
   height: 40px;
 }
 
-.base-button a:focus {
+.base-button:focus {
   color: rgba(0,0,0,0.3);
 }
 
