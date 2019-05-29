@@ -60,6 +60,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -94,12 +99,17 @@ a {
 }
 
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
 }
 
 .catalogue-navigation {
@@ -490,8 +500,38 @@ a {
   margin-top: 0px;
 }
 
+.popular-goods {
+  margin-bottom: 106px;
+}
+
+.popular-goods__columns {
+  display: flex;
+  width: 1160px;
+}
+
 .popular-goods__list {
+  display: flex;
   list-style: none;
+}
+
+.popular-goods__image {
+  padding-left: 90px;
+  width: 384px;
+  height: 486px;
+}
+
+.popular-goods__image-container {
+  width: 474px;
+  margin-right: 120px;
+  display: flex;
+}
+
+.popular-goods__description-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 686px;
 }
 
 .popular-goods__number {
@@ -507,6 +547,7 @@ a {
 }
 
 .popular-goods__tagline {
+  width: 400px;
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 47px;
   font-weight: bold;
@@ -516,6 +557,7 @@ a {
 }
 
 .popular-goods__description {
+  width: 495px;
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -544,11 +586,27 @@ a {
   letter-spacing: 0.4px;
 }
 
-.goods-list__item{
+.goods-calatog {
+  margin-bottom: 80px;
+}
+
+.goods-navigation {
+  display: none;
+}
+
+.goods-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.goods-list__item {
   list-style: none;
 }
 
 .partners__list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -562,8 +620,35 @@ a {
   color: #000000;
 }
 
+.partners {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 93px;
+}
+
+.partners__item {
+  width: 260px;
+  height: 100px;
+  margin-right: 40px;
+}
+
+.partners__item:last-child {
+  margin-right: 0;
+}
+
 .features {
+  margin-bottom: 94px;
   background-color: #e5e5e5;
+}
+
+.features__columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__item:nth-child(2),
+.features__item:nth-child(3) {
+  display: none;
 }
 
 .features__navigation {
