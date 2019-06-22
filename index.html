@@ -9,8 +9,6 @@
   <body>
     <header class="main-header container">
       <nav class="main-navigation">
-        <div class="main-navigation__columns">
-            <div class="main-navigation__column">
                 <a class="main-navigation__logo">
                     <img class="main-navigation__image" src="img/content/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
                   </a>
@@ -18,9 +16,20 @@
                     <div class="main-navigation__search">
                       <input type="text" class="main-navigation__search-input" placeholder="Поиск по сайту">
                     </div>
+                    <ul class="user-navigation">
+                      <li class="user-navigation__item">
+                        <a class="user-navigation__link" href="#">Войти</a>
+                      </li>
+                      <li class="user-navigation__item">
+                        <a class="user-navigation__link" href="#">Сравнить</a>
+                      </li>
+                      <li class="user-navigation__item">
+                        <a class="user-navigation__link" href="#">Корзина</a>
+                      </li>
+                    </ul>
                   </div>
                     <ul class="site-navigation">
-                      <li class="site-navigation__item">
+                      <li class="site-navigation__item site-navigation__item-catalog">
                         <a class="site-navigation__link" href="#">Каталог товаров</a>
                         <ul class="catalogue-navigation">
                           <li class="catalogue-navigation__item">
@@ -43,35 +52,17 @@
                           </li>
                         </ul>
                       </li>
-                    </ul>
-            </div>
-            <div class="main-navigation__column">
-              <div class="main-navigation__row">
-                  <ul class="user-navigation">
-                      <li class="user-navigation__item">
-                        <a class="user-navigation__link" href="#">Войти</a>
+                      <li class="site-navigation__item site-navigation__item-delivery">
+                        <a class="site-navigation__link" href="#">Доставка</a>
                       </li>
-                      <li class="user-navigation__item">
-                        <a class="user-navigation__link" href="#">Сравнить</a>
+                      <li class="site-navigation__item site-navigation__item-warranty">
+                        <a class="site-navigation__link" href="#">Гарантия</a>
                       </li>
-                      <li class="user-navigation__item">
-                        <a class="user-navigation__link" href="#">Корзина</a>
+                      <li class="site-navigation__item site-navigation__item-contacts">
+                        <a class="site-navigation__link" href="#">Контакты</a>
                       </li>
                     </ul>
-              </div>
-                <ul class="site-navigation">
-                    <li class="site-navigation__item">
-                      <a class="site-navigation__link" href="#">Доставка</a>
-                    </li>
-                    <li class="site-navigation__item">
-                      <a class="site-navigation__link" href="#">Гарантия</a>
-                    </li>
-                    <li class="site-navigation__item">
-                      <a class="site-navigation__link" href="#">Контакты</a>
-                    </li>
-                  </ul>
             </div>
-        </div>
       </nav>
     </header>
     <main class="main">
@@ -91,12 +82,12 @@
                 <p class="popular-goods__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <a class="popular-goods__details base-button" href="#">Подробнее</a>
                 <table class="popular-goods__table popular-table">
-                  <tr class="popular-table__row">
+                  <tr class="popular-table__row-titles">
                     <th class="popular-table__title">Длина палки</th>
                     <th class="popular-table__title">Вес палки</th>
                     <th class="popular-table__title">Материал</th>
                   </tr>
-                  <tr class="popular-table__row">
+                  <tr class="popular-table__row-items">
                     <td class="popular-table__item">8, 5 м</td>
                     <td class="popular-table__item">5 кг</td>
                     <td class="popular-table__item">Карбон</td>
