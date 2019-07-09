@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Владислав Кныш](https://up.htmlacademy.ru/htmlcss/25/user/998749).
-* Наставник: [Александр Карташов](https://up.htmlacademy.ru/htmlcss/25/user/77080).
+* Наставник: [Александр Карташов](https://up.htmlacademy.ru/htmlcss/20/user/77080).
 
 ---
 
@@ -18,7 +18,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/998749-device-25) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/240189-device) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
 
 <img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29038004-a420d688-7bae-11e7-9a40-8f72e1f3cac4.jpg">
 
@@ -40,4 +40,4 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 <a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 1](https://htmlacademy.ru/intensive/htmlcss)» от [HTML Academy](https://htmlacademy.ru).
+Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный HTML и CSS, уровень 1](https://htmlacademy.ru/intensive/htmlcss)» от [HTML Academy](https://htmlacademy.ru).
